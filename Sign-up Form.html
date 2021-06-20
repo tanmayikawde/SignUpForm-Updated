@@ -1,0 +1,116 @@
+
+<!-- saved from url=(0029)http://127.0.0.1:5500/P1.HTML -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Sign-up Form</title>
+
+        <link rel="stylesheet" href="./Sign-up Form_files/Techgig.css">
+    </head>
+    <body>
+        <img src="./Sign-up Form_files/TechGig.com_Logo.png" alt="TechGig">
+        <div id="title">
+            <h1>Sign-Up for Techgig Account</h1>
+        </div>
+        <div class="plans1">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>First Name <input type="text" name="firstname" placeholder="firstname"></label>
+                <label>Last Name <input type="text" name="lastname" placeholder="lastname"></label>
+                <br><br>
+                <label>Phone number: <input type="text" name="Phone number" placeholder="phone number"></label>
+                <br><br>
+                <label>Address: </label>
+                <textarea name="address" cols="60" rows="2"></textarea><br>
+                <label for="start"> Date Of Birth: <input type="date" placeholder="dd-mm-yyyy" max="2020-12-31"></label>
+                <br><br>
+                <div class="gender">
+                    <label>Gender:
+                    <input type="radio" name="male" value="">Male
+                    <input type="radio" name="female" value="">Female
+                    </label>
+                </div>
+            </fieldset>         
+        <br>
+            <fieldset><legend>Account Details</legend>
+            <label>Email address: <input type="email" name="Email address" placeholder="email address"></label>
+            <br><br>
+            <label>Password: <input type="password" name="Password"></label>
+            <label>Re-type Password: <input type="password" name="Password"></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Purpose</legend>
+                <label> <input type="checkbox" value="personal"> For my personal use </label>
+                <label> <input type="checkbox" value="professional"> For professional work </label>
+            
+            
+        </fieldset>
+        <fieldset>
+                <label>Subscription Plan</label>
+                <select name="Plan">
+                    <option value="1 month">1 month</option>
+                    <option value="6 months"> 6 months</option>
+                    <option value="12 months">12 months </option>
+                </select>
+            
+        </fieldset></div>
+        
+        <div class="plans">
+                <ul> <h3>All plans Include: </h3> 
+                    <li>Unlimited repositories</li>
+                    <li>Unlimited public collaborators</li>
+                    <li>Unlimited disc space</li>
+                </ul>
+        </div>
+        <div class="plans">
+                <ul> <h3>Teams Include: </h3> 
+                    <li>Create team-owned repositories</li>
+                    <li>Delegate administration</li>
+                    <li>Send email invitations</li>
+                    <li>Manage repository access via groups</li>
+                </ul>
+        </div>
+        <div class="signup">
+            <label><h1>
+            <a href="http://127.0.0.1:5500/Successfully.png"><input class="button" type="submit" value="Sign Up"></a>   <input class="button" type="reset" value="Reset"></h1>
+        </label>
+        </div> 
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+    </body></html>

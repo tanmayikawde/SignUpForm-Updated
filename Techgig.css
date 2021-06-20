@@ -1,0 +1,67 @@
+body{
+    color: black;
+    font: normal 16px Tahoma;
+    background-image: linear-gradient(150deg, rgb(197, 234, 240),rgb(243, 192, 240),rgb(198, 243, 220));
+}
+
+body img{
+    padding-left: 450px;
+    width: 1000px;
+    height: 200px;
+}
+#title{
+    width: 80% center;
+    text-align: center;
+    border: 3px dotted rgb(177, 172, 176);
+    margin : 15px;
+    background-color: rgb(255, 255, 255);
+}
+legend{
+    color: #708090;
+}
+li:hover{
+    color: rgb(238, 26, 26);
+}
+li:active{
+    color: lightcoral;
+}
+.plans1{
+    float: left;
+    width: 1300px;
+    
+}
+textarea{
+    display: block;
+}
+.plans{
+    font-family: tahoma;
+    float:right ;
+    width: 30%;
+    font-weight: 800px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform:initial;
+    letter-spacing:0.1em;
+    word-spacing: 0.15em;
+    background-color: rgb(212, 218, 245);
+    padding: 15px;
+    box-sizing: border-box;
+    list-style-image:url(./i01_i01_checkmark.png);
+
+
+}
+
+.signup{
+    padding-top: 500px;
+    text-align: center;
+
+}
+.button:hover{
+    background-color: rgb(241, 179, 179);
+}
+.button{
+    background-color: rgb(186, 139, 168);
+    color: black;
+    padding: 12px 17px;
+    box-shadow: 3px 3px 3px rgb(104, 72, 105);
+}
